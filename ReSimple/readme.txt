@@ -1,6 +1,5 @@
-....Python Mini Capstone ~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
-
-            Sample Manager - "ReSimple"
+                  - ReSimple -
+            Renaming samples, simply...
 - Preview, play, and rename batches of .wav files -
 
 Menu Heirarchy
