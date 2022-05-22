@@ -6,8 +6,6 @@ from array import array
 from struct import pack
 from pathlib import Path
 
-# "C:\Users\johns\Samples\wavs"
-
 class resimple():
     def __init__(self):
         self.filepath = input("Enter path to sample directory: ")
