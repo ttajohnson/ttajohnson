@@ -1,6 +1,5 @@
 - Timothy Johnson @ttajohnson
 - Currently learning Python, HTML, Javascript, CSS, and Django at PDX Code Guild.
-- Self learning goal: Code for DAW and VST.
 - How to reach me: johnsonandtimothy@gmail.com
 
 <!---
