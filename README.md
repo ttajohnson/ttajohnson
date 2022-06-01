@@ -1,6 +1,6 @@
 - Timothy Johnson @ttajohnson
 - Currently learning Python, HTML, Javascript, CSS, and Django at PDX Code Guild.
-- How to reach me: ttajohnson@proton.me
+- How to reach me: tim.ttaj@gmail.com
 
 <!---
 ttajohnson/ttajohnson is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
