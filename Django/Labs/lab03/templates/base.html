@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <section class="container">
+        <hr>
+        <header>
+            <div class="navi-left">
+                <h1><a href="{% url 'posts:home' %}">CHIRP</a></h1>
+                <h3>Choose your birds wisely.</h3>
+            </div>
+            <nav>    
+                <div class="navi-right">
+                    {% if user.is_authenticated %}
+                        <p>The early <a href="{% url 'users:profile' user.username %}">{{ user.username }}</a> gets the worm!</p>
+                        <p><a href="{% url 'logout' %}">Logout</a></p>
+                    {% else %}
+                        <p><a href="{% url 'login' %}">Login</a></p>
+                        <p><a href="{% url 'users:signup' %}">Join Chirp</a></p>
+                    {% endif %}
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="create-chirps">
+                {% if user.is_authenticated %}
+                    
+                    <p><a href="{% url 'posts:create' %}">Create Chirp</a></p>
+                    
+                {% endif %}
+            </div>
+            <div class="chirps">
+                {% block content %}
+                {% endblock content %}
+                <br>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <h6>Chirp Copyright &copy; Forever & A Day</h6>
+        </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+header, main, footer {
+	padding: 1em;
+    text-align: center;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align:center;
+    background-color: black;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding:3em;
+
+    
+}
+
+h2:active {
+    background-color: white;
+}
+
+.labels {
+    display: block;
+    padding-top: 1em;
+}
+
+
+#numform {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex:content; */
+    justify-content: center;
+    /* text-align: center; */
+    
+}
+
+#numchars {
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    
+}
+
+#nc1 {
+    padding: 1em;
+}
+
+#nc2 {
+    padding: 1em;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'grocerylist/main.css' %}">
+</head>
+<body>
+    <div class="title">
+        <h1>Grocery List</h1>
+    </div>
+    <section>
+        <div class="list">
+            
+            <h3>Items</h3>
+
+            <ul>
+                {% for grocery_item in not_complete %}
+                    <li>{{ grocery_item }}</li>
+                    <form action="{% url 'grocerylist:complete' grocery_item.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Mark Complete">
+                    </form>
+                    <form action="{% url 'grocerylist:delete' grocery_item.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Delete">
+                    </form>
+                {% endfor %}
+            </ul>
+        
+        </div>
+        <hr>
+        <div>
+            <h3>Complete</h3>
+                
+            <ul class="complete">
+                {% for grocery_item in complete %}
+                    <li>{{ grocery_item }}</li>
+                    <form action="{% url 'grocerylist:complete' grocery_item.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Mark Incomplete">
+                    </form>
+                    <form action="{% url 'grocerylist:delete' grocery_item.id %}" method="post">
+                        {% csrf_token %}
+                        <input type="submit" value="Delete">
+                    </form>
+                {% endfor %}
+            </ul>
+        </div>
+        <hr>
+        <div class="newitem">
+
+            <h3>Add Item</h3>
+
+            <form action="{% url 'grocerylist:create' %}" method="POST">
+                {% csrf_token %}
+                <input type="text" name="description" placeholder="New Item">
+                <input type="submit" value="Enter">
+            </form>
+
+        </div>
+    </section>
+    
+</body>
+</html>

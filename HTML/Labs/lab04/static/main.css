@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+    border-radius: 3%;
+}
+
+body {
+    background-color: chocolate;
+}
+
+header {
+    padding-top: 1em;
+    padding-left: 1em;
+    background-color: wheat;
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-bottom: 2em;
+    background-color: wheat;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3, h4 {
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
+}
+
+#carne-pic {
+    padding-left: 2em;
+    padding-top: 2em;
+    width: fit-content;
+    text-align: center;  
+}
+
+#menu {
+    padding: 4em;
+    width: 800px;
+    text-align: justify;
+    
+}
+
+.radiobutts {
+    display: flex;
+    justify-content: space-between;
+}
+
+#additions {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* padding-top: 9.5em; */
+    background-color: wheat;
+}
+
+#gigante {
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 3.05em;
+}
+
+#links {
+    margin-left: 800px;
+    margin-right: 800px;
+    padding-bottom: 2.25em;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: whitesmoke;
+}

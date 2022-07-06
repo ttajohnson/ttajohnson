@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+
+</head>
+<body>
+    <div class="form">
+        <h3>To Do List:</h3>
+        <ul class="to_do_list">
+        {% for task in to_do %}
+            <li>Task: {{task['text']}} // Priority: {{task['priority']}}</li>
+        {% endfor %}
+        </ul>
+        
+        <form action="" method="post">
+            <input type="text" name="input_text" placeholder="enter some text"/><br>
+            <input type="radio" name="button" value="High" checked> High<br>
+            <input type="radio" name="button" value="Medium">  Medium<br>
+            <input type="radio" name="button" value="Low"> Low <br>
+            <button type="submit">submission</button>
+        </form> 
+
+    </div>
+    
+</body>
+</html>

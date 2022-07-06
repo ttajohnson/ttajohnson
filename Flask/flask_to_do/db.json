@@ -1,0 +1,20 @@
+{
+    "todos": [
+        {
+            "priority": "High",
+            "text": "Walk the dog"
+        },
+        {
+            "priority": "Medium",
+            "text": "Butter the cat"
+        },
+        {
+            "priority": "Low",
+            "text": "Wash dishes"
+        },
+        {
+            "priority": "low",
+            "text": "Go to the Bank"
+        }
+    ]
+}

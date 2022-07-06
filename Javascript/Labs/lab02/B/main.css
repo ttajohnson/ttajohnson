@@ -1,0 +1,17 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin: 10rem;
+}
+
+#blackjack-button {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(https://i2.wp.com/files.123freevectors.com/wp-content/original/161175-grey-and-white-texture-background.jpg?w=800&q=95);
+    
+}
+
+h1 {
+    text-shadow: 0px 10px 2px rgba(0, 0, 0, 0.182);
+}
+
+p {
+    margin: 50px auto 50px auto;
+    width: 500px;
+    padding: 10px;
+    background: #f2f4fe9b;
+    border-radius: 5%;
+}
+
+.wiki {
+    color: cornflowerblue;
+    font-size: x-large;
+}
+
+q {
+    font-size: large;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#billevans {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: upper-roman; 
+}

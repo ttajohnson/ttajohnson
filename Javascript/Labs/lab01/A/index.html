@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01 Average Numbers</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Python to Javascript</h1>
+        <h3>Average Numbers</h3>
+    </header>
+    <br>
+    <div class="notes">
+        <p>Notes: I was getting NaN (Not a Number) returned when I
+            attempted to alert(sum). I checked out alert(nums)
+            which made it apparent that it <em>was</em> creating my
+            nums list, but was adding the string of "done" to the end
+            of the list. This was because my .push was outside of the
+            loop. Adding my .push to the loop with an <b>else</b>
+            fixed the issue.
+        </p>
+    </div>
+    <script src="a_lab01.js"></script>
+</body>
+</html>

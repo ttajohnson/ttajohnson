@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <h2>YoYoYo</h2>
+    <ul class="todolist">
+        {% for task in todo  %}
+            <li>Task: {{task['text']}} - Priority: {{task['priority']}}</li>
+        {% endfor %}
+    </ul>
+    <form action="" method="post">
+        <input type="text" name="input_text" placeholder="Enter new task..."/>
+        <select name="priority" id="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

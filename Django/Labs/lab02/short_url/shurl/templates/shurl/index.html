@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shurl</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <div>
+        <form action="{% url 'shurl:index' %}" method="POST">
+            {% csrf_token %}
+            <input type="url" name="long_url" placeholder="Enter URL">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+    <div>
+        {% for item in new_url %}
+            <p>{{ item.long_url }} - <a href="{% url 'shurl:redirect' item.short_url %}" target='_blank'>{{ item.short_url }}</a></p>
+        {% endfor %}
+</body>
+</html>
