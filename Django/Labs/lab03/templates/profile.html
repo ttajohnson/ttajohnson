@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="profile_posts">
+    
+        <h1>{{ user_profile.username }}</h1>
+        <h6><em>Joined {{ user_profile.date_joined }}</em></h6>
+
+        {% for post in user_profile.posts.all %}
+            <div class="profile-post">
+                <p>{{ post.body }}</p>
+                <p><em>{{ post.created }}</em></p>
+            </div>
+            <br>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

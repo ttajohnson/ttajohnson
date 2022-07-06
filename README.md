@@ -1,5 +1,5 @@
 - Timothy Johnson @ttajohnson
-- Currently learning Python, HTML, CSS, Flask, Django, and Javascript at PDX Code Guild.
+- Currently learning Python, HTML, CSS, Flask, Django, Javascrip, Vue, & Django REST at PDX Code Guild.
 - How to reach me: tim.ttaj@gmail.com
 
 <!---

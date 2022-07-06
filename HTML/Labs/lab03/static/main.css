@@ -1,0 +1,147 @@
+/* NECESSITIES */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+header, main, footer {
+	padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* END NECESSITIES */
+
+body {
+    background-image: linear-gradient(to bottom, rgb(68, 128, 173), #447fad56);
+    line-height: 1.5em;
+    
+}
+
+header {
+    background-color: #395b6f;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#blog-title {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    
+}
+
+
+.blog-posts {
+    /* background-color: rgba(64, 55, 55, 0.353);
+    border-style: hidden;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #1b2226;
+    
+}
+
+.post {
+    background-color: #ffffff00;
+    border-style: hidden;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 .25em white;
+
+}
+
+#blog-title {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.navi a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.titles h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.authors h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dates h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.bodies p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 750px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .blog-posts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        
+    }
+
+    .post {
+        margin: 5%;
+        height: auto;
+    }
+
+    .bodies {
+        margin: auto;
+    }
+
+}
+@media (min-width: 1000px) {
+
+    main {
+        content: 10px 10px 10px 10px;
+    }
+
+    .blog-posts {
+        gap: 0%;
+    }
+
+    .post {
+        flex: 1 0 21%;
+    }
+
+
+}

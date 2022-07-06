@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+</head>
+<body>
+    <header>
+        <div id="blog-title">
+            <h1>Things About Stuff</h1>
+        </div>
+        <div class="navi">
+            <nav>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About Me</a></p>
+                <p><a href="#">Archive</a></p>
+                <p><a href="#">Contact Me</a></p>
+            </nav>
+        </div>
+        <!-- <hr> -->
+    </header>
+    <main>
+        <div class = 'blog-posts'>
+            {% for post in posts %}
+            <div class = 'post'>
+                <div class = 'titles'>
+                    <h3>{{post.title}}</h3>
+                </div>
+                    <div class = 'authors'>
+                        <h5>{{post.author}}</h5>
+                    </div>
+                        <div class = 'dates'>
+                            <h6>{{post.date}}</h6>
+                        </div>
+                            <div class = 'bodies'>
+                                <p>{{post.body}}</p>
+            </div>                </div>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+       <h6>Copyright &copy; 2022-2023 Tim's Blog & Stuff & Things Inc.</h6> 
+    </footer>
+</body>
+</html>

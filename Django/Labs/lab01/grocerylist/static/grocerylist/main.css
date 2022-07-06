@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: azure;
+    background-color: steelblue;
+    margin: 3em;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+section {
+    display: flex;
+    align-content: center;
+}
+
+li {
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: .5rem;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+

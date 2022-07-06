@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gigante Burrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"/>
+</head>
+<body>
+    <header>
+        <div id="restaurant">
+            <h1>EL GIGANTE BURRITO</h1>
+        </div>
+    </header>
+    <main>
+        <div id="carne-pic">
+            <img src="https://justmicrowaveit.com/wp-content/uploads/2019/02/easy-steak-burrito-1-720x540.jpg" alt="Carne Asada Burrito">
+            <h3>Carne Asada</h3>
+        </div>
+        <div id="menu">
+            <div id="title">
+                <h3>Create Your Custom Burrito:</h3>
+            </div>
+            <div id="form">
+                <form action="https://webhook.site/2263eb4a-aa33-472e-a5f3-c2a4c637f799" method="post">
+                    <div id="customer">
+                        <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                        <input type="tel" name="phone" id="phone" maxlength="10" placeholder="Phone number..." required>
+                        <input type="email" name="email" id="email" placeholder="Email..." required><br><br>
+                    </div>
+                    <div class="radiobutts">
+                        <div id="torilla-select">
+                            <label for="tortilla">Tortilla: </label><br>
+                            <input type="radio" name="tortilla" value="flour" checked> Flour<br>
+                            <input type="radio" name="tortilla" value="corn"> Corn<br>
+                            <input type="radio" name="tortilla" value="blue_corn"> Blue Corn<br>
+                            <input type="radio" name="tortilla" value="spinach"> Spinach<br>
+                        </div>
+                        <div id="rice-select">
+                            <label for="rice">Rice: </label><br>
+                            <input type="radio" name="rice" value="spanish" checked> Spanish<br>
+                            <input type="radio" name="rice" value="white"> White<br>
+                            <input type="radio" name="rice" value="brown"> Brown<br>
+                        </div>
+                        <div id="beans-select">
+                            <label for="beans">Beans: </label><br>
+                            <input type="radio" name="beans" value="black" checked> Black<br>
+                            <input type="radio" name="beans" value="pinto"> Pinto<br>
+                            <input type="radio" name="beans" value="refried"> Refried<br>
+                        </div>
+                        <div id="protein-select">
+                            <label for="protein">Protein: </label><br>
+                            <input type="radio" name="protein" value="carne" checked> Carne Asada<br>
+                            <input type="radio" name="protein" value="chicken"> Chicken<br>
+                            <input type="radio" name="protein" value="impossible"> Impossible Meat<br>
+                            <input type="radio" name="protein" value="sofritas"> Sofritas (Tofu)<br>
+                        </div>
+                    </div>
+                    <h4>Additional Fillings</h4>
+                    <div class="checkboxes">
+                        <div id="additions">
+                            <div class="addition">
+                                <input type="checkbox" name="cheese" value="cheese"> Cheese
+                            </div>
+                            <div class="addition">
+                                <input type="checkbox" name="pico" value="pico"> Pico de Gallo
+                            </div>
+                            <div class="addition">
+                                <input type="checkbox" name="avocado" value="avocado"> Avocado
+                            </div>
+                            <div class="addition">
+                                <input type="checkbox" name="cream" value="cream"> Sour Cream
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="delivery">
+                        <textarea name="delivery-ins" id="delivery-ins" cols="80" rows="9" placeholder="Delivery instructions..."></textarea>
+                    </div>
+                    <div id="button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="gigante">
+            <p>EL GIGANTE BURRITO</p>
+        </div>
+        <div id="links">
+            <a href="#"> Home</a>
+            <a href="#"> About</a>
+            <a href="#"> Menu</a>
+            <a href="#"> Order</a>
+            <a href="#"> Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
