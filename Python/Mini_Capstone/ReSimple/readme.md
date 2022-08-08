@@ -1,6 +1,6 @@
-                  - ReSimple -
-            Renaming samples, simply...
-- Preview, play, and rename batches of .wav files -
+#                  - ReSimple -
+##           Renaming samples, simply...
+### Preview, play, and rename batches of .wav files -
 
 Menu Heirarchy
 
