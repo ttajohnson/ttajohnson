@@ -4,6 +4,7 @@
 
 Menu Heirarchy
 
+<p>
 1. path to sample directory
 2. display sample directory contents  <--------
 3. choose sample folder to enter              |
@@ -13,7 +14,7 @@ Menu Heirarchy
     4.3 rename a batch of samples             |
     4.4 ability to return to Step 2  ----------      
 5. exit program.
-
+</p>
 
 Dev-Notes:
 
