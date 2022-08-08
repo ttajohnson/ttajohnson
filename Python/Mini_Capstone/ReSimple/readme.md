@@ -4,17 +4,17 @@
 
 Menu Heirarchy
 
-<p>
-1. path to sample directory
-2. display sample directory contents  <--------
-3. choose sample folder to enter              |
-4. Menu                                       |
-    4.1 display samples, preview or full      |
-    4.2 play samples one by one               |
-    4.3 rename a batch of samples             |
-    4.4 ability to return to Step 2  ----------      
-5. exit program.
-</p>
+
+        1. path to sample directory
+        2. display sample directory contents  <--------
+        3. choose sample folder to enter              |
+        4. Menu                                       |
+            4.1 display samples, preview or full      |
+            4.2 play samples one by one               |
+            4.3 rename a batch of samples             |
+            4.4 ability to return to Step 2  ----------      
+        5. exit program.
+
 
 Dev-Notes:
 
