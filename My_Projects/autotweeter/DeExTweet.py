@@ -1,3 +1,4 @@
+import os
 import tweepy
 from config import api_key, api_secret, access_token, token_secret
 
@@ -8,6 +9,28 @@ auth = tweepy.OAuth1UserHandler(
     access_token= access_token,
     access_token_secret= token_secret 
 )
+
+
+api = tweepy.API(auth)
+
+DATA_FILENAME = os.path.expanduser("days.txt")
+
+with open(DATA_FILENAME, "r") as f:
+    count = f.read()
+
+with open(DATA_FILENAME, 'w') as nf:
+    count = int(count) + 1
+    new_count = str(count)
+    nf.write(new_count)
+
+
+tweet = f"{count} Days of being automated!"
+
+
+
+api.update_status(tweet)
+
+
 
 # api = tweepy.API(auth)
 
@@ -36,9 +59,4 @@ auth = tweepy.OAuth1UserHandler(
 # auth = tweepy.OAuthHandler(api_key, api_secret)
 # auth.set_access_token(access_token, token_secret)
 
-api = tweepy.API(auth)
-
-tweet = "Hello Test!"
-
-api.update_status(tweet)
 
