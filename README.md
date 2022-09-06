@@ -7,10 +7,11 @@
 - Flask
 - GO (In Progress)
 
-## Projects in Motion
+## Recent Projects
 
-### - Hiragana Practice App - 
-### - Personal E-Commerce Site to Sell Beats/Samples - 
+### - DeExTweet - Automated Daily Tweet
+### - Hiraganic - Japanese Hiragana Practice
+### - ChasingHz - Beat Store
 
 
 <!---
