@@ -24,7 +24,7 @@ with open(DATA_FILENAME, 'w') as nf:
     nf.write(new_count)
 
 
-tweet = f" {count}!"
+tweet = f"Open to work! Day: {count}!"
 
 
 
