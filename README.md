@@ -5,11 +5,11 @@
 - Javascript    - Vue.JS
 - HTML    - CSS
 - Flask
-- GO (In Progress)
 
 ## Recent Projects
 
 ### - DeExTweet - Automated Daily Tweet
+### - ReSimple  - File manager for .wav
 ### - Hiraganic - Japanese Hiragana Practice
 ### - ChasingHz - Beat Store
 
