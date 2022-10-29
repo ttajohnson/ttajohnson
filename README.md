@@ -8,7 +8,6 @@
 
 ## Recent Projects
 
-### - DeExTweet - Automated Daily Tweet
 ### - ReSimple  - File manager for .wav
 ### - Hiraganic - Japanese Hiragana Practice
 ### - ChasingHz - Beat Store
