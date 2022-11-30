@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgb(204, 233, 253) 100%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+#top-corners {
+    display: flex;
+    justify-content: space-between;
+}
+
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 50px solid rgb(0, 0, 0);
+    border-right: 50px solid transparent;
+}
+
+
+#triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 50px solid rgb(0, 0, 0);
+    border-left: 50px solid transparent;
+}
+
+#top-bar {
+    width: 100vw;
+    height: 6rem;
+    background-color: rgb(53, 62, 70);
+    background-image: url(/assets/dcuxfm2-3b4dd3f4-2261-44d4-bb59-09edec146718.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: -5rem;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+#side-bars {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#side-left {
+    background-color: slategray;
+    background-image: url(/assets/dcuxfm2-3b4dd3f4-2261-44d4-bb59-09edec146718.png);
+    background-size: cover;
+    height: 100vh;
+    width: .5rem;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+#side-right {
+    background-color: slategray;
+    background-image: url(/assets/dcuxfm2-3b4dd3f4-2261-44d4-bb59-09edec146718.png);
+    background-size: cover;
+    height: 100vh;
+    width: .5rem;
+    box-shadow: -1px 1px 1px 1px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+#bottom-corners {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid rgb(0, 0, 0);
+    border-right: 50px solid transparent;
+}
+
+
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid rgb(0, 0, 0);
+    border-left: 50px solid transparent;
+}
+
+#bottom-bar {
+    width: 100vw;
+    height: 6rem;
+    background-color: rgb(53, 62, 70);
+    background-image: url(/assets/dcuxfm2-3b4dd3f4-2261-44d4-bb59-09edec146718.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-bottom: -5rem;
+    box-shadow: -1px -1px 1px 1px;
+}
+
+main {
+    margin: 5rem 2rem 5rem 2rem;
+    font-family: 'Gruppo', cursive;
+    font-size: 2.5vw;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+#title-data {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.my-pics {
+    width: 5rem;
+    height: auto;
+    margin-top: 2rem;
+}
