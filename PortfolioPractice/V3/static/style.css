@@ -1,0 +1,14 @@
+* {
+    padding: 2rem;
+}
+
+.carousel-inner {
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.carousel-item img {
+    max-width: 50vw;
+    max-height: 50vh;
+}
