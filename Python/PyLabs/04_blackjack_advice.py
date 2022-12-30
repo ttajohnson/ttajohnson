@@ -10,9 +10,31 @@
 # VERSION 1
 
 # >>>
-
 face_cards = {"A": 1, "J": 10, "Q": 10, "K": 10}
 hand = []
 
 while True:
-    card = input("What")
+    card = input("Card: ").capitalize()
+    if card in face_cards.keys():
+        card = face_cards[card]
+    else:
+        card = int(card)
+    hand.append(card)
+    if len(hand) == 3:
+        break
+
+total = sum(hand)
+
+print(*hand, sep=" + ")
+
+print(total)
+
+if total < 17:
+    print("Hit")
+elif total >= 17 and total < 21:
+    print("Stay")
+elif total == 21:
+    print("Blackjack!")
+else:
+    print("Busted")
+# >>>
