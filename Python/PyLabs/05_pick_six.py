@@ -21,17 +21,23 @@ import random
 ##         num_list.append(num)
 ##     return num_list
 
-prizes = {1: 4, 2: 7, 3: 100, 4: 50000, 5: 1000000, 6: 25000000}
-
 
 def random_nums():
     num_list = [random.randint(1, 99) for num in range(5)]
     return num_list
 
 
-def ticket_compare(a, b):
-    num_set = set(b)
-    return [num for num, value in enumerate(a) if value in num_set]
+def ticket_compare(winning, play):
+    prizes = {0: 0, 1: 4, 2: 7, 3: 100, 4: 50000, 5: 1000000, 6: 25000000}
+    matches = 0
+    for i in range(len(play)):
+        if winning[i] == play[i]:
+            # print(winning, play)
+            matches += 1
+            # print(f"Matches: {matches}")
+        earnings = prizes[matches]
+        # print(f"Earnings: ${earnings}")
+    return earnings
 
 
 def main():
@@ -39,16 +45,15 @@ def main():
     balance = 0
     winning_ticket = random_nums()
 
-    while counter < 10:
+    while counter < 100000:
         play_ticket = random_nums()
-        balance - 2
-        matches = ticket_compare(winning_ticket, play_ticket)
-        if len(matches) == 1:
-            match_num = matches.pop()
-            prize = prizes[match_num]
-            balance += prize
+        balance -= 2
+        # print(balance)
+        earnings = ticket_compare(winning_ticket, play_ticket)
+        balance += earnings
         counter += 1
-    print(balance)
+    print(f"\nWinning Numbers: {winning_ticket}\nPlays: {counter}\nPayout: ${balance}")
 
 
 main()
+# >>>
