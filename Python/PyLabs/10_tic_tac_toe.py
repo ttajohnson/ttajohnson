@@ -17,3 +17,8 @@ class Game(Player):
 
     def move(self, x, y, player):
         self.board[x][y] = player.token
+
+
+game = Game()
+
+print(game.__repr__())
