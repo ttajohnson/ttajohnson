@@ -1,3 +1,10 @@
+# LAB 10: TIC TAC TOE
+# write a Player class and Game class to model Tic Tac Toe, and a function main
+# that models gameplay taking in user inputs through REPL.
+
+# -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
+
+# >>>
 class Player:
     def __init__(self, name, token):
         self.name = name
@@ -98,3 +105,4 @@ def Main():
 
 
 Main()
+# >>>
