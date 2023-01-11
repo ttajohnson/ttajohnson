@@ -5,3 +5,10 @@
 
 # >>>
 import requests
+
+response = requests.get(
+    "https://icanhazdadjoke.com/", headers={"Accept": "application/json"}
+)
+response_data = response.json()
+
+print(response_data["joke"])
