@@ -49,6 +49,15 @@ import requests
 import time
 
 
+def random_joke():
+    response = requests.get(
+        "https://icanhazdadjoke.com/", headers={"Accept": "application/json"}
+    )
+    response_data = response.json()
+
+    print(response_data["joke"])
+
+
 def get_jokes(term, page):
     response = requests.get(
         "https://icanhazdadjoke.com/search",
@@ -62,21 +71,40 @@ def get_jokes(term, page):
 
 
 def main():
+    print("Welcome to the Joke Zone!")
+
     while True:
-        user_term = input("Search jokes by term: ")
-        page = 1
 
-        jokes = get_jokes(user_term, page)
+        user_choice = input(
+            "\n1. Random Joke\n2. Jokes by Term\n3. Exit the Joke Zone\n"
+        )
 
-        if len(jokes[0]) < 1:
-            print(f"No {user_term} jokes found...")
-            pass
+        if user_choice == "1":
+            random_joke()
+        elif user_choice == "2":
+            term = input("Joke Term: ")
+            page = 1
+            while True:
+                jokes = get_jokes(term, page)
+                print(f"{jokes[1]} pages of {term} jokes found!\nPage {page}:\n")
+
+                for joke in jokes[0]:
+                    print(joke["joke"])
+                    time.sleep(1)
+                next_or_back = input(f"\n1. Next Page of {term} jokes.\n2. Fresh Jokes")
+                if next_or_back == "1":
+                    page += 1
+                    pass
+                elif next_or_back == "2":
+                    break
+                else:
+                    print("Invalid input!")
+                    continue
+        elif user_choice == "3":
+            break
         else:
-            print(f"{jokes[1]} page(s) of {user_term} jokes found.")
-
-            for joke in jokes[0]:
-                print("\n", joke["joke"], "\n")
-                time.sleep(0.5)
+            print("Invalid option!")
+            pass
 
 
 main()
