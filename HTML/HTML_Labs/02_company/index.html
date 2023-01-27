@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Beer Haven</title>
+</head>
+<body>
+    <header class="topnav">
+        <a href="index.html" class="active"><h1>Beer Haven</h1></a>
+        <nav id="mylinks">
+            <a href="#">About</a>
+            <a href="#">Beers</a>
+            <a href="#">Homebrewing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="javacript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    <main>
+        <div class="post">
+            <h3>01/26/2023</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, mollitia.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quos maxime repellat commodi quasi veniam natus laborum error velit deleniti, impedit qui facere ducimus dolorem, eveniet vel, harum vero officiis illum. Laboriosam dolor et ducimus itaque optio minima perspiciatis harum, repellendus nisi odio dignissimos excepturi nostrum. Quibusdam commodi sed quaerat totam ex voluptatibus nihil natus rem omnis magnam debitis minima nemo alias facilis quam cumque illo corporis, qui, facere praesentium quo! Consequuntur, veniam cupiditate! Ut quibusdam quas veniam aliquam modi nemo perspiciatis explicabo adipisci odio. Autem fugiat vero voluptatibus dolores? Pariatur fugit perferendis earum exercitationem neque, impedit vitae cum eligendi!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex enim, cum, possimus et minus neque nihil sint atque harum autem aspernatur! Repellendus facilis, perspiciatis eveniet magni pariatur recusandae facere quas fugit. Doloribus culpa ratione, veritatis, nam odio quis laudantium ex libero vel aliquam modi qui illo aut, labore dolore at.</p>
+        </div>
+        <div class="post">
+            <h3>01/03/2023</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium soluta omnis a ipsum ut sapiente sit quod! Sequi repellat, ducimus, possimus cum maiores adipisci natus veritatis repellendus perspiciatis explicabo ipsa blanditiis iusto commodi atque voluptatibus? Nisi quas deserunt exercitationem architecto? Cumque veritatis dolorum error veniam nostrum ducimus impedit aut temporibus?</p>
+        </div>
+        <div class="post">
+            <h3>12/24/2022</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <img id="xmas-dog" src="https://images.unsplash.com/photo-1576247975963-4995837fb3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="Xmas Dog Photo">
+        </div>
+    </main>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("mylinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
