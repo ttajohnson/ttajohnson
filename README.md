@@ -8,9 +8,7 @@
 
 ## Recent Projects
 
-### - ReSimple  - File manager for .wav
-### - Hiraganic - Japanese Hiragana Practice
-### - ChasingHz - Beat Store
+### - ReSimple  - File manager for .wav audio files.
 
 
 <!---
