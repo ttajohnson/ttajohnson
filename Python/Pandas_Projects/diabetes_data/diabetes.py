@@ -19,7 +19,7 @@ df = pd.read_csv("diabetes.csv")
 # # Isolate data types in the output by using the include argument.
 # print(df.describe(include=[int]))
 
-# # The exclude arguments works as well.
+# # The exclude argument works as well.
 # print(df.describe(exclude=[int]))
 
 # # Transpose the statistics summary with the .T attribute.
@@ -41,19 +41,29 @@ df = pd.read_csv("diabetes.csv")
 # .copy() makes a copy of the original DataFrame.
 df2 = df.copy()
 
-# The original DataFrame does not have any missing values, we will create some using concepts described later.
-df2.loc[2:5, 'Pregnancies'] = None
-print(df2.head(7))
+# # The original DataFrame does not have any missing values, we will create some using concepts described later.
+# df2.loc[2:5, 'Pregnancies'] = None
+# print(df2.head(7))
 
-# Check for missing values using .isnull(), combine with .sum() to count the number of nulls in each column. Double .sum() will output the total nulls in the DataFrame.
-print(df2.isnull().head(7))
-print(df2.isnull().sum())
-print(df2.isnull().sum().sum())
+# # Check for missing values using .isnull(), combine with .sum() to count the number of nulls in each column. Double .sum() will output the total nulls in the DataFrame.
+# print(df2.isnull().head(7))
+# print(df2.isnull().sum())
+# print(df2.isnull().sum().sum())
 
-# Isolate a column using []
+# # Isolate a column using []
 
 
-# .loc[] (location) and .iloc[] (integer location) can fetch specific rows by labels or conditions.
-print(df2.loc[1])
-print(df2.iloc[1])
-print(df2.loc[100:110]) 
+# # .loc[] (location) and .iloc[] (integer location) can fetch specific rows by labels or conditions.
+# print(df2.loc[1])
+# print(df2.iloc[1])
+# print(df2.loc[100:110])
+
+# 
+
+print(df.describe(percentiles=[0.1, 0.2, 0.3, 0.4, 0.8, 0.9]).T)
+
+print(df.head(n=7))
+
+print(df.iloc[4])
+
+print(type(df.iloc))
