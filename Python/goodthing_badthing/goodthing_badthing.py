@@ -9,4 +9,8 @@ def csv_repl(file_path):
         for row in csv_reader:
             print(*row, sep=' | ')
 
+    while True:
+
+        user_input = input("")
+
 csv_repl('movies.csv')
