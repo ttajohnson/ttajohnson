@@ -24,16 +24,36 @@ def main():
 
     # Convert the string into a list of integers.
     cc_number = [int(char) for char in cc_input]
+    # print(cc_number)
 
     # Slice off the 'check digit'.
     check_digit = cc_number.pop()
+    # print(check_digit)
 
     # Reverse the list.
     reverse_cc = cc_number[::-1]
+    # print(reverse_cc)
     
-    # Double every other number. At this ppint I'm choosing to use enumerate() and comprehension.
-    doubled_list = [num * 2 if index % 2 == 1 else num for index, num in enumerate(reverse_cc)]
+    # Double every other number. At this point I'm choosing to use enumerate() and comprehension.
+    doubled_list = [num * 2 if index % 2 == 0 else num for index, num in enumerate(reverse_cc)]
+    # print(doubled_list)
 
+    # Subtract 9 from any number > 9.
+    sub_9 = [num - 9 if num > 9 else num for num, num in enumerate(doubled_list)]
+    # print(sub_9)
+
+    # Sum the entire list.
+    sum_num = sum(sub_9)
+    # print(sum_list)
+
+    # Isolate the second digit of the sum.
+    sec_digit = sum_num % 10
+
+    # Check if the isolated digit matches the check digit.
+    if check_digit == sec_digit:
+        print("Valid Credit Card Number Accepted!")
+    else:
+        print("Invalid Credit Card Number!")
 
 
 if __name__ == "__main__":
