@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Burrito Grande</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="section">
+        <h1 id="page-title">El Burrito Grande - Order</h1>
+    </header>
+
+    <main class="section">
+        <div id="container">
+            <div class="container-item" id="burrito-pic-box">
+                <div id="burrito-pic">
+                    <img src="https://cheatdaydesign.com/wp-content/uploads/2022/06/Stacked-California-Burrito-720x720.jpg" alt="Photo of Burrito">
+                </div>
+                <p>Maximo Burrito Superior</p>
+            </div>
+
+            <div class="container-item" id="order-form">
+                <div>
+                    <h2>Make Your Burrito</h2>
+                </div>
+                <form action="https://webhook.site/9fb3021d-00a4-483e-8ac1-07b1ab065ab0" method="post">
+                    <div class="form-inputs" id="radios">
+                        <label for="tortilla">Torilla:</label> 
+                        <input type="radio" name="tortilla" value="Flour" checked>Flour
+                        <input type="radio" name="tortilla" value="Corn">Corn
+                        <input type="radio" name="tortilla" value="Spinach">Spinach
+                    </div>
+                    
+                    <div class="form-inputs" id="checkboxes">
+                        <label for="meat">Meat:</label>
+                        <select name="meat">
+                            <option value="veggie">None</option>
+                            <option value="beef">Beef</option>
+                            <option value="chicken">Chicken</option>
+                            <option value="pork">Al Pastor</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-inputs" id="options">
+                        <label for="options">Options:</label>
+                        <input type="checkbox" name="beans" value="beans">Beans 
+                        <input type="checkbox" name="cheese" value="cheese">Cheese 
+                        <input type="checkbox" name="avocado" value="avocado">Avocado 
+                        <input type="checkbox" name="rice" value="rice">Rice 
+                    </div>
+                    
+                    <div class="form-inputs" id="customer">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Your name..."> 
+                        <label for="special">Special Instructions:</label> 
+                        <textarea name="special" cols="30" rows="10" maxlength="250" placeholder="..."></textarea>
+                    </div>
+                    
+                    <div class="form-inputs" id="submit-button">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
