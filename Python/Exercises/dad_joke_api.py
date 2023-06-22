@@ -20,20 +20,31 @@ def main():
     # Initiation of REPL
     while True:
         print("Welcome to the Dad Joke API!")
-        search_term = input("What genre of joke do you want to hear?\n")
-
-        headers = {"Accept": "application/json"}
-
-        response = requests.get("https://icanhazdadjoke.com/search", headers=headers)
-        json_data = response.json()
-
-        print(json_data)
-        
-        
-
-        break
-
-    return
+        search_term = input("What genre of joke do you want to hear?: ")
+        page = 1
+        while True:
+            headers = {"Accept": "application/json"}
+            params = {"page":page, "term":search_term}
+            response = requests.get("https://icanhazdadjoke.com/search", headers=headers, params=params)
+            json_data = response.json()
+            if json_data['results'] == []:
+                print(f"I don't have any {search_term} jokes...")
+                break
+            else:
+                # print(json_data)
+                print(f"\nI found {json_data['total_jokes']} {search_term} jokes.")
+                print(f"Page: {json_data['current_page']} of {json_data['total_pages']}\n")
+                for index, joke in enumerate(json_data['results'], start=1):
+                    print(f"{index}. {joke['joke']}")
+            if json_data['total_pages'] > 1:
+                next_page = input(f"\nNext page of {search_term} jokes? Y/N: ").upper()
+                if next_page == "Y":
+                    page += 1
+                    continue
+                else:
+                    break
+            else:
+                break
 
 if __name__ == "__main__":
     main()
