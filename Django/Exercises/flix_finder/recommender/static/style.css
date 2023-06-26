@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    background-color: #333333;
+}
+
+#carouselExampleControls {
+    margin-top: 0%;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    min-height: 500px;
+}
+
+p.h1 {
+    padding-bottom: 20px;
+}
+
+p.h3 {
+    padding-top: 20px;
+}
