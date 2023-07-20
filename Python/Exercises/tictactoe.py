@@ -1,7 +1,13 @@
 class Player:
     def __init__(self, name, token):
-        self.name = name
-        self.token = token
+        self.name = input("What is your name: ")
+        self.token = input("Choose your token: ")
+
+    def __eq__(self, other):
+        if isinstance(other, Player):
+            return self.token == other.token
+        return False
+
 
 class Game(Player):
     def __init__(self):
@@ -35,13 +41,11 @@ class Game(Player):
 
     def is_full(self):
         if '-' in self.board:
-            print("It's a draw!")
+            return False
+        else:
+            return True
 
     def is_game_over(self):
         pass
 
-
-
-ttt = Game()
-
-print(ttt)
+player1 = Player('merry', 'X')
