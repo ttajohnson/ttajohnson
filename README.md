@@ -1,8 +1,10 @@
 # Timothy Johnson // @ttajohnson // tim.ttaj@gmail.com
 
 ### Languages & Frameworks 
-- Python    - Django   - Django REST
-- Javascript    - Vue.JS
+- Python    
+- Django
+- Javascript
+- Vue.JS
 - HTML    - CSS
 - Flask
 
